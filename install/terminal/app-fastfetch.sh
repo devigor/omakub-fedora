@@ -1,6 +1,6 @@
 # Display system information in the terminal
-sudo dnf update --assumeyes
-sudo dnf install --assumeyes fastfetch
+sudo dnf update -y
+sudo dnf install -y fastfetch
 
 # Only attempt to set configuration if fastfetch is not already set
 if [ ! -f "$HOME/.config/fastfetch/config.jsonc" ]; then
